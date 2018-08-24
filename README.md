@@ -1,5 +1,5 @@
 # BAT_FFMPEG
-Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2 <img src=https://emojipedia-us.s3.amazonaws.com/thumbs/120/emojione/151/unicorn-face_1f984.png width="10px">)
+Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2 <img src=https://emojipedia-us.s3.amazonaws.com/thumbs/120/emojione/151/unicorn-face_1f984.png width="50px">)
 
 My collection of scripts :)\
 For converting (audio, video, ...) files using FFMPEG :)\
