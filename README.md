@@ -2,7 +2,7 @@
 Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2 &lt;magic>)
 
 My collection of scripts :)\
-For converting video files using FFMPEG :)\
+For converting (audio, video, ...) files using FFMPEG :)\
 \
 \
 \
