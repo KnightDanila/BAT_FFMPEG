@@ -1,4 +1,5 @@
 # Ignore all files. But .gitignore file is not ignore
 *
+!*.exe
 !*.bat
 !.gitignore
