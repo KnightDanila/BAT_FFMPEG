@@ -5,9 +5,18 @@ Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2 <img src=https://
 My collection of scripts :)\
 For converting (audio, video, ...) files using FFMPEG :)
 
-# How to use:
+## How to use:
 All these .bat files drag and drop like.\
 Just drag and drop some files in these bat files :)
+
+
+## FFMPEG About :movie_camera:
+FFMPEG WebPage: https://www.ffmpeg.org/  
+FFMPEG About:  
+> Official: https://www.ffmpeg.org/about.html  
+> Wiki: https://en.wikipedia.org/wiki/FFmpeg
+
+
 \
 \
 \
@@ -16,10 +25,3 @@ Just drag and drop some files in these bat files :)
 This links for me:\
 srt - [https://trac.ffmpeg.org/ticket/7356]\
 srt EOF -  sub.ass - CRLF and sub.srt - LF - [https://trac.ffmpeg.org/ticket/7362]
-
-
-# FFMPEG About :movie_camera:
-FFMPEG WebPage: https://www.ffmpeg.org/  
-FFMPEG About:  
-> Official: https://www.ffmpeg.org/about.html  
-> Wiki: https://en.wikipedia.org/wiki/FFmpeg
