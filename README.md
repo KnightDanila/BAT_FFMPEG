@@ -1,6 +1,11 @@
 # BAT_FFMPEG :movie_camera:
 Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2 <img src=https://emojipedia-us.s3.amazonaws.com/thumbs/120/emojione/151/unicorn-face_1f984.png width="50px">)
 
+FFMPEG WebPage: https://www.ffmpeg.org/  
+FFMPEG About:  
+> Official: https://www.ffmpeg.org/about.html  
+> Wiki: https://en.wikipedia.org/wiki/FFmpeg
+
 My collection of scripts :)\
 For converting (audio, video, ...) files using FFMPEG :)
 
