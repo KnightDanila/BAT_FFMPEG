@@ -9,6 +9,12 @@ For converting (audio, video, ...) files using FFMPEG :)
 All these .bat files drag and drop like.\
 Just drag and drop some files in these bat files :)
 
+### Logic
+All files have MAIN code - where you can find main command(s) for ffmpeg.exe\
+This main command have comment mark:  
+```REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\```
+
+
 
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
