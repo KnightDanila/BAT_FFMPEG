@@ -1,5 +1,5 @@
-https://trac.ffmpeg.org/ticket/7356#comment:4
-https://ffmpeg.org/ffmpeg.html#Advanced-options
+REM https://trac.ffmpeg.org/ticket/7356#comment:4
+REM https://ffmpeg.org/ffmpeg.html#Advanced-options
 
 @echo off
 echo %CD%
