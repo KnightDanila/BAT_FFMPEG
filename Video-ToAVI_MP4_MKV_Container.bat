@@ -23,9 +23,9 @@ if %COUNTER% GTR 0 (
 	)
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
-		REM ffmpeg.exe -i %%x -vcodec copy -acodec copy "%%~nx_output_AVI.avi"
-		REM ffmpeg.exe -i %%x -vcodec copy -acodec copy "%%~nx_output_MP4.mp4"
-		ffmpeg.exe -i %%x -vcodec copy -acodec copy "%%~nx_output_MKV.mkv"
+		REM ffmpeg.exe -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 "%%~nx_output_AVI.avi"
+		REM ffmpeg.exe -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 "%%~nx_output_MP4.mp4"
+		ffmpeg.exe -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 "%%~nx_output_MKV.mkv"
 	)
 ) else (
 	echo _____GET NO ONE FILES_____
