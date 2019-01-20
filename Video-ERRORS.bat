@@ -30,7 +30,10 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM -> aac < ac3
 		REM ffmpeg.exe -i %%x -vcodec copy -acodec aac "%%~nx_output_AAC.mkv"
 		REM ffmpeg.exe -i %%x -vcodec copy -acodec ac3 "%%~nx_output_AC3.mkv"
-		ffmpeg.exe -i %%x -f mp4 -benchmark null
+		REM ffmpeg.exe -i %%x -f mp4 -benchmark Video-ERRORS.log
+		REM ffmpeg.exe -v error -i %%x -f null - >Video-ERRORS.log 2>&1
+		ffprobe -v error -count_frames -i %%x
+		REM start Video-ERRORS.log
 	)
 ) else (
 	echo _____GET NO ONE FILES_____
