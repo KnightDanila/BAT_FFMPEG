@@ -39,7 +39,7 @@ AtomicParsley About:
 \
 \
 \
-\
+\ 
 
 ## This links for me:
 srt - [https://trac.ffmpeg.org/ticket/7356]\
