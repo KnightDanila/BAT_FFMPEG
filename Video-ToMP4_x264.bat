@@ -25,10 +25,9 @@ if %COUNTER% GTR 0 (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM BEST QUALITY FOR
 		REM ffmpeg.exe -i %%x -vcodec libx264 -acodec aac "%%~nx_output_AAC.mp4"
-		ffmpeg.exe -i %%x -vcodec libx264 -acodec ac3 "%%~nx_output_AC3.mp4"
+		REM ffmpeg.exe -i %%x -vcodec libx264 -acodec ac3 "%%~nx_output_x264_AC3.mp4"
 		REM BEST QUALITY FOR - MOV Photocamera Lumix
-		REM ffmpeg.exe -i %%x -vcodec libx264 -c:a ac3 -ar 48000 "%%~nx_output_CRF0.mp4"
-		
+		ffmpeg.exe -i %%x -vcodec libx264 -c:a ac3 -ar 48000 "%%~nx_output_MP4_AC3_48KHz.mp4"	
 		REM ffmpeg.exe -i %%x -vcodec libx264 -c:a ac3 -b:a 128k "%%~nx_output_CRF0.mp4"
 		REM ffmpeg.exe -i %1 -vcodec libx264 -crf 20 output.mp4
 	)

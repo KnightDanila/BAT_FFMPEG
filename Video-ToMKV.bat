@@ -26,7 +26,10 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM ffmpeg.exe -i %%x -vcodec copy -acodec copy "%%~nx_output_AC3.mkv"
 		REM ffmpeg.exe -i %%x -vcodec libx264 -acodec copy "%%~nx_output_AC3.mkv"
 		REM BEST QUALITY FOR - MOV Photocamera Lumix
-		ffmpeg.exe -i %%x -vcodec libx264 -acodec copy "%%~nx_output_PCM.mkv"
+		REM ffmpeg.exe -i %%x -vcodec libx264 -acodec ac3 -ar 48000 "%%~nx_output_MKV_AC3_48KHz.mkv"
+		ffmpeg.exe -i %%x -vcodec libx264 -acodec aac "%%~nx_output_MKV_AAC.mkv"
+		REM ffmpeg.exe -i %%x -vcodec libx264 -acodec copy "%%~nx_output_PCM.mkv"
+		REM ffmpeg.exe -i %%x -vcodec libx264 -acodec ac3 "%%~nx_AC3.mkv"
 		REM ffmpeg.exe -i %%x -vcodec libx264 -crf 20 -acodec copy "%%~nx_output_PCM.mkv"
 	)
 ) else (
