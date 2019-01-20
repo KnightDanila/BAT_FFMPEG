@@ -30,8 +30,8 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM AAC filesize = 70%
 		REM AC3 filesize = 90% 
 		REM -> aac < ac3
-		REM ffmpeg.exe -i %%x -vcodec copy -acodec ac3 -map_metadata 0 -map 0 "%%~nx_output_MKV_ AC3.mkv"
-		ffmpeg.exe -i %%x -vcodec copy -acodec aac -map_metadata 0 -map 0 "%%~nx_output_MKV_AAC.mkv"
+		REM ffmpeg.exe -i %%x -vcodec copy -acodec ac3 -map_metadata 0 -map 0 "%%~nx_output_MKV_ AC3.%%~xx"
+		ffmpeg.exe -i %%x -vcodec copy -acodec aac -map_metadata 0 -map 0 "%%~nx_output_MKV_AAC.%%~xx"
 	)
 ) else (
 	echo _____GET NO ONE FILES_____
