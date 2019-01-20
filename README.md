@@ -23,7 +23,19 @@ FFMPEG About:
 > Official: https://www.ffmpeg.org/about.html  
 > Wiki: https://en.wikipedia.org/wiki/FFmpeg
 
+## YouTube-DL About :movie_camera:
+YouTube-DL WebPage: 
+> http://rg3.github.io/youtube-dl/
+YouTube-DL About:  
+> Official: http://rg3.github.io/youtube-dl/
+> GitHub: https://github.com/rg3/youtube-dl 
 
+## AtomicParsley About :movie_camera:
+AtomicParsley WebPage: 
+> http://atomicparsley.sourceforge.net/
+AtomicParsley About:  
+> Official: https://sourceforge.net/projects/atomicparsley/
+> GitHub: https://github.com/wez/atomicparsley 
 \
 \
 \
