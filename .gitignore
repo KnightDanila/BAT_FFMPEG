@@ -3,4 +3,4 @@
 !*.exe
 !*.bat
 !.gitignore
-!.conf
+!*.conf
