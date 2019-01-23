@@ -3,8 +3,11 @@ REM https://ffmpeg.org/ffmpeg.html#Advanced-options
 REM https://superuser.com/questions/78496/variables-in-batch-file-not-being-set-when-inside-if/78509
 
 
-REM BECAUSE I CANNOT USE "SET /p" - IN LOOP
+REM 	USE "@setlocal EDE (EnableDelayedExpansion )" -
+REM	Because I cannot use "SET /p" - IN LOOP, 
+REM 	Cannot use & Ampersand symbol in URL (I need it for list)
 @setlocal EnableDelayedExpansion 
+
 
 @echo off
 echo %CD%
