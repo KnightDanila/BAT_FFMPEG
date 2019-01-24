@@ -1,10 +1,13 @@
-https://stackoverflow.com/questions/3255674/convert-audio-files-to-mp3-using-ffmpeg
-https://superuser.com/questions/332347/how-can-i-convert-mp4-video-to-mp3-audio-with-ffmpeg
-
 @echo off
+REM https://stackoverflow.com/questions/3255674/convert-audio-files-to-mp3-using-ffmpeg
+REM https://superuser.com/questions/332347/how-can-i-convert-mp4-video-to-mp3-audio-with-ffmpeg
+
 echo %CD%
 echo %~dp0
 cd /d %~dp0
+ECHO. & ECHO ******* BAT FILE ******* 
+ECHO %~nx0 
+ECHO ************************ & ECHO.
 
 REM For first file
 REM %1
