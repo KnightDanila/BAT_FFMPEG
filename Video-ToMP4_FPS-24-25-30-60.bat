@@ -28,10 +28,10 @@ if %COUNTER% GTR 0 (
 	)
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
-		ffmpeg -i %%x -r 24 -vcodec libx264 -acodec copy -threads 1 "%%~nx_output_FPS24.mp4"
-		REM ffmpeg -r "25" -i %%x -vcodec copy -acodec copy "%%~nx_output_FPS25.mp4"
-		REM ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -threads 1 "%%~nx_output_FPS30.mp4"
-		REM ffmpeg -r "60" -i %%x -vcodec copy -acodec copy "%%~nx_output_FPS60.mp4"
+		REM ffmpeg -i %%x -r 24 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS24.mp4"
+		REM ffmpeg -r "25" -i %%x -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS25.mp4"
+		ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS30.mp4"
+		REM ffmpeg -r "60" -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS60.mp4"
 	)
 ) else (
 	echo _____GET NO ONE FILES_____
