@@ -5,4 +5,4 @@
 :: Omitting the "-map" option will use the default stream selection. This will work if your video input has no audio.
 :: -map 0:v – From input 0 (the first input, which is video.mp4) choose the video stream(s).
 :: -map 1:a – From input 1 (the second input, which is audio.m4a) choose the audio stream(s).
-ffmpeg.exe -i inputV.mp4 -i inputA.mkv -map 0:v -map 1:a -c:v copy -c:a ac3 -shortest output.mp4
+ffmpeg.exe -i inputV.webm -i inputA.m4a -map 0:v -map 1:a -c:v libx264 -crf 20 -c:a copy -shortest output.mp4
