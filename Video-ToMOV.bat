@@ -31,8 +31,9 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM -acodec libfaac -ac 2 -ar 44100 -ab 80k -vcodec libx264 -s 640x480 -b 670k -g 30 -r 15 output.mov
 		REM ffmpeg.exe -i %%x -an -c:v mjpeg -s 320x240 -f mov "%%~nx_output_AC3.mov"
 		
-		REM FOR PANASONIC
-		ffmpeg.exe -i %%x -acodec pcm_u8 -map_channel 0.1.0 -ar 8000 -q:a 30 -r 10 -c:v mjpeg -s 320x240 "%%~nx_output_AC3.mov"
+		REM FOR PANASONIC DMC-LZ7 Lumix
+		REM ffmpeg.exe -i %%x -acodec pcm_u8 -map_channel 0.1.0 -ar 8000 -q:a 30 -r 10 -c:v mjpeg -s 320x240 "%%~nx_output_AC3.mov"
+		ffmpeg.exe -i %%x -acodec pcm_u8 -map_channel 0.1.0 -ar 8000 -q:a 30 -r 10 -c:v mjpeg -s 640x480 "%%~nx_output_AC3.mov"
 		REM ffmpeg -ss 00:30:50 -i %%x -acodec pcm_u8 -map_channel 0.1.0 -ar 8000 -q:a 30 -r 10 -c:v mjpeg -s 320x240 "%%~nx_output_CUT.mov"
 		REM ffmpeg.exe -i %%x -acodec pcm_u8 -map_channel 0.1.0 -ar 8000 -q:a 30 -r 10 -c:v mjpeg -q:v 30 -s 320x240 "%%~nx_output_AC3.mov"
 		REM ffmpeg.exe -i %%x -acodec pcm_u8 -map_channel 0.1.0 -ar 8000 -r 10 -c:v mjpeg -s 320x240 -f mov "%%~nx_output_AC3.mov"
