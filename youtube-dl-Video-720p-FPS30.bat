@@ -1,3 +1,4 @@
+@echo off
 REM youtube-dl.exe --config-location youtube-dl.conf URL
 
 
@@ -7,10 +8,12 @@ REM 	Cannot use & Ampersand symbol in URL (I need it for list)
 @setlocal EnableDelayedExpansion 
 
 
-@echo off
 echo %CD%
 echo %~dp0
 cd /d %~dp0
+ECHO. & ECHO ******* BAT FILE ******* 
+ECHO %~nx0 
+ECHO ************************ & ECHO.
 
 ECHO. & ECHO ******************************************************
 SET /p URL="Paste URL: "
