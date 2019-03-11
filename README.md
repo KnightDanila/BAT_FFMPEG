@@ -30,10 +30,10 @@ REM ffmpeg -r "60" -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 -thre
 ### Video-ToGIF (ffmpeg video to GIF)
 Convert video to GIF files.\
 By different styles:\
-Video-ToGIF_16Bit-Style.bat - 16 Bit-Style\
-Video-ToGIF_32ColorsStyle.bat - 32 Colors Style\
-Video-ToGIF_Fast.bat - fast&quality\
-Video-ToGIF_HD.bat - max quality\
+`Video-ToGIF_16Bit-Style.bat` - 16 Bit-Style\
+`Video-ToGIF_32ColorsStyle.bat` - 32 Colors Style\
+`Video-ToGIF_Fast.bat` - fast&quality\
+`Video-ToGIF_HD.bat` - max quality\
 
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
