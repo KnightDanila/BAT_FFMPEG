@@ -18,7 +18,7 @@ Than main code-command(s) for ffmpeg.exe (Video-ToMP4_FPS-24-25-30-60.bat for ex
  ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS30.mp4"
 ```
 ## Scripts
-### Video-ToMP4_FPS-24-25-30-60.bat
+### Video-ToMP4_FPS-24-25-30-60.bat (How to change frame rate of video, fps of video by ffmpeg.exe?)
 Can change frame rate or FPS of video and recode it to container `.mp4` & video codec `x264`.\
 By default it is `-r 30` - 30 FPS. Choose what you want in MAIN Code:
 ```
