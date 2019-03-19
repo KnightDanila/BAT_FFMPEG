@@ -27,6 +27,13 @@ REM ffmpeg -r "25" -i %%x -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -t
 ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS30.mp4"
 REM ffmpeg -r "60" -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS60.mp4"
 ```
+### Video-ToGIF (ffmpeg video to GIF)
+Convert video to GIF files.\
+By different styles:\
+`Video-ToGIF_16Bit-Style.bat` - 16 Bit-Style\
+`Video-ToGIF_32ColorsStyle.bat` - 32 Colors Style\
+`Video-ToGIF_Fast.bat` - fast&quality\
+`Video-ToGIF_HD.bat` - max quality\
 
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
