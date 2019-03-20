@@ -43,7 +43,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM Fast style :)
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
 		REM scale=-1:-1 and scale=320:-1 = dispersion
-		ffmpeg.exe -i %%x -vf fps=10,scale=320:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
+		ffmpeg.exe -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
 		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "%%~nx_output_Fast.gif"
 
 		REM TESTs
