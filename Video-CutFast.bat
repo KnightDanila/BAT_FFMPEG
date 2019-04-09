@@ -36,7 +36,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 					REM ffmpeg -ss 00:00:00 -i %%x -to 00:02:28.327 -acodec copy -vcodec copy -map_metadata 0 -map 0 "%%~nx_output_CUT.mkv"
 					REM ffmpeg -ss 00:00:00 -i %%x -ss 00:00:00 -to 00:02:28.327 -acodec copy -vcodec copy -map_metadata 0 -map 0 "%%~nx_output_CUT.mkv"
 		REM ffmpeg -ss 00:03:10.360 -i %%x -to 00:05:28.327 -acodec copy -vcodec copy -map_metadata 0 -map 0 "%%~nx_output_CUT.mkv"
-		ffmpeg -ss 00:00:13.000 -i %%x -acodec copy -vcodec copy -map_metadata 0 -map 0 "%%~nx_output_CUT.%%~xx"
+		ffmpeg -ss 00:01:21.000 -i %%x -acodec copy -vcodec copy -map_metadata 0 -map 0 "%%~nx_output_CUT.%%~xx"
 					REM ffmpeg -i %%x -vcodec copy -acodec copy -ss 00:00:11.2 -to 00:00:13.2 "%%~nx_output_CUT.mp4"
 	)
 ) else (
