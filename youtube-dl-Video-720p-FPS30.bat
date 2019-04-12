@@ -21,7 +21,7 @@ ECHO URL=!URL!;
 ECHO ****************************************************** & ECHO.
 
 REM _________________MAIN_____________________
-	youtube-dl.exe --config-location youtube-dl-Video-720p.conf !URL!
+	youtube-dl.exe --config-location youtube-dl-Video-720p-FPS30.conf !URL!
 REM _______________END_MAIN___________________
 
 ECHO.
