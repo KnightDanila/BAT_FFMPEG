@@ -14,7 +14,6 @@ ECHO. & ECHO ******* BAT FILE *******
 ECHO %~nx0 
 ECHO ************************ & ECHO.
 
-
 REM For first file
 REM %1
 REM For multiple files
@@ -36,9 +35,6 @@ if %COUNTER% GTR 0 (
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
-		REM (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
-		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
-		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse" "%%~nx_output.gif"
 		
 		REM Fast style :)
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
@@ -49,7 +45,9 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM TESTs
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=320:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=400:-1:flags=lanczos[x];[x][1:v] paletteuse" "%%~nx_output.gif"
-		
+		REM (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
+		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
+		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse" "%%~nx_output.gif"
 
 
 

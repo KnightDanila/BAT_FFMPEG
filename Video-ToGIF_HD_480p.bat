@@ -6,6 +6,7 @@ REM https://superuser.com/questions/1231645/ffmpeg-generate-and-use-different-pa
 
 
 @echo off
+
 echo %CD%
 echo %~dp0
 cd /d %~dp0
@@ -48,7 +49,6 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=1" "%%~nx_output.gif"
 		
-
 
 
 )

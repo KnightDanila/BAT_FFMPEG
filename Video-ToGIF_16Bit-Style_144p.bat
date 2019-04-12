@@ -6,6 +6,7 @@ REM https://superuser.com/questions/1231645/ffmpeg-generate-and-use-different-pa
 
 
 @echo off
+
 echo %CD%
 echo %~dp0
 cd /d %~dp0
@@ -34,10 +35,7 @@ if %COUNTER% GTR 0 (
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
-		REM (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
-		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
-		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse" "%%~nx_output.gif"
-		
+
 		REM 16 bit style :) P.S. In real it is 2 bit style :D
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
 		ffmpeg.exe -i %%x -vf fps=30,scale=-1:144:flags=lanczos,palettegen=max_colors=16 Video-ToGIF_palette.png -y
@@ -46,7 +44,9 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM TESTs
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=320:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=400:-1:flags=lanczos[x];[x][1:v] paletteuse" "%%~nx_output.gif"
-		
+		REM (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
+		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
+		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse" "%%~nx_output.gif"
 
 
 

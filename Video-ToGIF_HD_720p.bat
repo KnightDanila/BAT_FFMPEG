@@ -6,6 +6,7 @@ REM https://superuser.com/questions/1231645/ffmpeg-generate-and-use-different-pa
 
 
 @echo off
+
 echo %CD%
 echo %~dp0
 cd /d %~dp0

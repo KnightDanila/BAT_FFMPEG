@@ -36,11 +36,10 @@ if %COUNTER% GTR 0 (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
 		
-		REM Fast style :)
+		REM 16 bit style :) P.S. In real it is 2 bit style :D
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
-		REM scale=-1:-1 and scale=-1:720 = dispersion
-		ffmpeg.exe -i %%x -vf fps=10,scale=-1:720:flags=lanczos,palettegen Video-ToGIF_palette.png -y
-		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:720:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "%%~nx_output_Fast_720p.gif"
+		ffmpeg.exe -i %%x -vf fps=30,scale=-1:240:flags=lanczos,palettegen=max_colors=16 Video-ToGIF_palette.png -y
+		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=10,scale=-1:240:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "%%~nx_output_16Bit_240p.gif"
 
 		REM TESTs
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=320:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
