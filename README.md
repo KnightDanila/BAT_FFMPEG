@@ -41,23 +41,19 @@ ffmpeg -ss 00:01:00.000  ... - cut video from 1 minute to the end of video\
 ffmpeg -ss 00:01:00.000 -i %%x -t 00:01:00.000 ... - cut video from 1 minute to 00:02:00.000\
 -to - end\
 ffmpeg -ss 00:01:00.000 -i %%x -to 00:01:10.000 ... - cut video from 1 minute to 00:01:10.000\
-Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking\
-Write time in MAIN:
-```
-ffmpeg ...
-```
-### Video-ToWebM
-Convert video file to WebM\
-You can change -crf 0..51 - where 0 is lossless, 23 is the default, and 51 is worst quality possible.\
-MAIN:
-```
-ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"
-```
-
+Write time in MAIN: ```ffmpeg ...```
 By different styles:\
 `Video-CutFast.bat` - Fast\
 `Video-CutAccurateBeta.bat` - Fast&Accurate\
 `Video-CutAccurateAndRecode.bat` - Accurate&Recode\
+Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking\
+### Video-ToWebM
+Convert video file to WebM\
+You can change -crf 0..51 - where 0 is lossless, 23 is the default, and 51 is worst quality possible.\
+MAIN:
+```ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"```
+### Youtube-dl
+youtube-dl-* - the ready-made presets for youtube-dl
 
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
