@@ -34,6 +34,30 @@ By different styles:\
 `Video-ToGIF_32ColorsStyle.bat` - 32 Colors Style\
 `Video-ToGIF_Fast.bat` - fast&quality\
 `Video-ToGIF_HD.bat` - max quality\
+### Video-Cut (ffmpeg cut video)
+-ss - start\
+ffmpeg -ss 00:01:00.000  ... - cut video from 1 minute to the end of video\
+-t - duration\
+ffmpeg -ss 00:01:00.000 -i %%x -t 00:01:00.000 ... - cut video from 1 minute to 00:02:00.000\
+-to - end\
+ffmpeg -ss 00:01:00.000 -i %%x -to 00:01:10.000 ... - cut video from 1 minute to 00:01:10.000\
+Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking\
+Write time in MAIN:
+```
+ffmpeg ...
+```
+### Video-ToWebM
+Convert video file to WebM\
+You can change -crf 0..51 - where 0 is lossless, 23 is the default, and 51 is worst quality possible.\
+MAIN:
+```
+ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"
+```
+
+By different styles:\
+`Video-CutFast.bat` - Fast\
+`Video-CutAccurateBeta.bat` - Fast&Accurate\
+`Video-CutAccurateAndRecode.bat` - Accurate&Recode\
 
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
@@ -61,6 +85,6 @@ AtomicParsley WebPage:
 \
 \\
 
-## This links for me:
+## These links for me:
 srt - [https://trac.ffmpeg.org/ticket/7356]\
 srt EOF -  sub.ass - CRLF and sub.srt - LF - [https://trac.ffmpeg.org/ticket/7362]
