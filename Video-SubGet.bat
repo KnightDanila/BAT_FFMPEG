@@ -28,8 +28,9 @@ if %COUNTER% GTR 0 (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM ffmpeg.exe -i %%x -map 0:s:0 -sub_charenc CP1252 "%%~nx_output_subtitles.srt"
 
-		REM (get all eng data - one video, one audio and one eng sub; then remove audio and video. and i get subs only, I am happy)
+		REM (get all eng data - one video, one audio and one eng sub; then remove audio and video and I get subs only, I am happy)
 		ffmpeg.exe -i %%x -map 0:m:language:eng -map -0:a -map -0:v "%%~nx.srt"
+		lf2crlf.exe "%%~nx.srt"
 
 		REM get eng (remove rus, ukr)
 		REM ffmpeg.exe -i %%x -map 0:s -map -0:m:language:rus -map -0:m:language:ukr "%%~nx.srt"
@@ -39,7 +40,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM Audio get only eng 
 		REM ffmpeg.exe -i %%x -map 0:a -map -0:m:language:rus -map -0:m:language:jpn -map -0:m:language:ukr -report "%%~nx_output.ac3"
 		
-
+		
 
 
 )

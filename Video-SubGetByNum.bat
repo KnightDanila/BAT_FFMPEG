@@ -41,7 +41,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		ECHO streamNumber = !streamNumber!;
 		REM (get all sub data and select which you like)
 		ffmpeg.exe -i %%x -map 0:!StreamNumber! "%%~nx.srt"
-
+		lf2crlf.exe "%%~nx.srt"
 )
 ) else (
 	echo _____GET NO ONE FILES_____
