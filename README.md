@@ -11,7 +11,7 @@ Just drag and drop some files in these bat files :)
 
 ### Logic
 All files have MAIN Code - where you can find main command(s) for ffmpeg.exe\
-This main command have comment mark:  
+This main command has comment mark:  
 ```REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\```\
 Than main code-command(s) for ffmpeg.exe (Video-ToMP4_FPS-24-25-30-60.bat for example):
 ```
