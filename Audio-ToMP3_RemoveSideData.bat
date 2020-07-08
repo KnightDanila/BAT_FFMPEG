@@ -32,7 +32,7 @@ if %COUNTER% GTR 0 (
 	)
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
-		REM MP3 to WAV
+		REM MP3 to MP3 RemoveSideData
 		ffmpeg -i %%x -c copy -write_xing 0 "Audio-ToMP3_RemoveSideData_Temp.mp3" -y
 		ffmpeg -i "Audio-ToMP3_RemoveSideData_Temp.mp3" -c copy "%%~nx_output_MP3RSD.mp3"
 	)
