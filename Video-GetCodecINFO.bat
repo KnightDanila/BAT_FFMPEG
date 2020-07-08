@@ -25,11 +25,6 @@ if %COUNTER% GTR 0 (
 	)
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
-		REM AAC filesize = 70%
-		REM AC3 filesize = 90% 
-		REM -> aac < ac3
-		REM ffmpeg.exe -i %%x -vcodec copy -acodec aac "%%~nx_output_AAC.mkv"
-		REM ffmpeg.exe -i %%x -vcodec copy -acodec ac3 "%%~nx_output_AC3.mkv"
 		ffmpeg.exe -i %%x -hide_banner
 		ffprobe.exe -i %%x -show_format -hide_banner
 	)
