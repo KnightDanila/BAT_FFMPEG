@@ -51,11 +51,11 @@ ffmpeg -ss 00:01:00.000 -i %%x -t 00:01:00.000 ... - cut video from 1 minute to 
 -to - end\
 ffmpeg -ss 00:01:00.000 -i %%x -to 00:01:10.000 ... - cut video from 1 minute to 00:01:10.000\
 Write time in MAIN: ```ffmpeg ...```
-By different styles:\
-`Video-CutFast.bat` - Fast\
-`Video-CutAccurateBeta.bat` - Fast&Accurate\
-`Video-CutAccurateAndRecode.bat` - Accurate&Recode\
-Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking\
+By different styles:  
+`Video-CutFast.bat` - Fast  
+`Video-CutAccurateBeta.bat` - Fast&Accurate  
+`Video-CutAccurateAndRecode.bat` - Accurate&Recode  
+Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking  
 ### Video-ToWebM
 Convert video file to WebM\
 You can change -crf 0..51 - where 0 is lossless, 23 is the default, and 51 is worst quality possible.\
@@ -88,7 +88,6 @@ AtomicParsley WebPage:
 \
 \
 \
-\\
 
 ## These links for me:
 srt - [https://trac.ffmpeg.org/ticket/7356]\
