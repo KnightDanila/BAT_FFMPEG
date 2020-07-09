@@ -18,6 +18,14 @@ Than main code-command(s) for ffmpeg.exe (Video-ToMP4_FPS-24-25-30-60.bat for ex
  ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS30.mp4"
 ```
 ## Scripts
+
+### Audio-ToMP3_RemoveSideData.bat
+This bat file doesn't reconvert the original mp3 - because it is the fastest way.\
+In the same way, it doesn't change the original quality.\
+But on the other hand, it removes all sidedata from metadata (but save all metadata)\
+Read this about sidedata and lameinfo (xing) "The ‘lame’ (or xing) header is not officially part of the mp3 specification"\
+https://eyed3.readthedocs.io/en/latest/plugins/lameinfo_plugin.html
+
 ### Video-ToMP4_FPS-24-25-30-60.bat (How to change frame rate of video, fps of video by ffmpeg.exe?)
 Can change frame rate or FPS of video and recode it to container `.mp4` & video codec `x264`.\
 By default it is `-r 30` - 30 FPS. Choose what you want in MAIN Code:
