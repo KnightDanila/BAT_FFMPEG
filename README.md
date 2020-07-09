@@ -63,7 +63,7 @@ MAIN:
 ```ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"```
 ### Youtube-dl
 youtube-dl-* - the ready-made presets for youtube-dl
-
+youtube-dl-ThumbNail.bat - download only thumbnail from youtube video
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
 > https://www.ffmpeg.org/  
