@@ -71,7 +71,7 @@ MAIN:
 ### Youtube-dl
 youtube-dl-* - the ready-made presets for youtube-dl  
 youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video  
-youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192 it is the maximum quality of audio file in youtube audio stream  
+youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192Kbps it is the maximum quality of audio file in youtube audio stream  
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
 > https://www.ffmpeg.org/  
