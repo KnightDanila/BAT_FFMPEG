@@ -70,7 +70,8 @@ MAIN:
 ```ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"```
 ### Youtube-dl
 youtube-dl-* - the ready-made presets for youtube-dl  
-youtube-dl-ThumbNail.bat - download only thumbnail from youtube video  
+youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video  
+youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192 it is the maximum quality of audio file in youtube audio stream  
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
 > https://www.ffmpeg.org/  
