@@ -19,6 +19,13 @@ Than main code-command(s) for ffmpeg.exe (Video-ToMP4_FPS-24-25-30-60.bat for ex
 ```
 ## Scripts
 
+### Audio-AudioGain.bat
+Gain (Increase) the sound volume of a file on 50%
+MAIN Code:
+```
+ffmpeg -i %%x -filter:a "volume=1.5" -ar 44100 -ac 2 -q:a 0 -map_metadata 0 -id3v2_version 3 "%%~nx_output_GAIN%%~xx"
+```
+
 ### Audio-ToMP3_RemoveSideData.bat
 #### useful for: remove ReplayGain
 This bat file doesn't reconvert the original mp3 - because it is the fastest way.\
