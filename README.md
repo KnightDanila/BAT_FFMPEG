@@ -18,6 +18,22 @@ Than main code-command(s) for ffmpeg.exe (Video-ToMP4_FPS-24-25-30-60.bat for ex
  ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS30.mp4"
 ```
 ## Scripts
+
+### Audio-AudioGain.bat
+Gain (Increase) the sound volume of a file on 50%
+MAIN Code:
+```
+ffmpeg -i %%x -filter:a "volume=1.5" -ar 44100 -ac 2 -q:a 0 -map_metadata 0 -id3v2_version 3 "%%~nx_output_GAIN%%~xx"
+```
+
+### Audio-ToMP3_RemoveSideData.bat
+#### useful for: remove ReplayGain
+This bat file doesn't reconvert the original mp3 - because it is the fastest way.\
+In the same way, it doesn't change the original quality.\
+But on the other hand, it removes all sidedata from metadata (but save all metadata)\
+Read this about sidedata and lameinfo (xing) "The ‘lame’ (or xing) header is not officially part of the mp3 specification"\
+https://eyed3.readthedocs.io/en/latest/plugins/lameinfo_plugin.html
+
 ### Video-ToMP4_FPS-24-25-30-60.bat (How to change frame rate of video, fps of video by ffmpeg.exe?)
 Can change frame rate or FPS of video and recode it to container `.mp4` & video codec `x264`.\
 By default it is `-r 30` - 30 FPS. Choose what you want in MAIN Code:
@@ -42,19 +58,20 @@ ffmpeg -ss 00:01:00.000 -i %%x -t 00:01:00.000 ... - cut video from 1 minute to 
 -to - end\
 ffmpeg -ss 00:01:00.000 -i %%x -to 00:01:10.000 ... - cut video from 1 minute to 00:01:10.000\
 Write time in MAIN: ```ffmpeg ...```
-By different styles:\
-`Video-CutFast.bat` - Fast\
-`Video-CutAccurateBeta.bat` - Fast&Accurate\
-`Video-CutAccurateAndRecode.bat` - Accurate&Recode\
-Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking\
+By different styles:  
+`Video-CutFast.bat` - Fast  
+`Video-CutAccurateBeta.bat` - Fast&Accurate  
+`Video-CutAccurateAndRecode.bat` - Accurate&Recode  
+Read more about Cut&Seeking here: https://trac.ffmpeg.org/wiki/Seeking  
 ### Video-ToWebM
 Convert video file to WebM\
 You can change -crf 0..51 - where 0 is lossless, 23 is the default, and 51 is worst quality possible.\
 MAIN:
 ```ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"```
 ### Youtube-dl
-youtube-dl-* - the ready-made presets for youtube-dl
-
+youtube-dl-* - the ready-made presets for youtube-dl  
+youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video  
+youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192Kbps it is the maximum quality of audio file in youtube audio stream  
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
 > https://www.ffmpeg.org/  
@@ -78,8 +95,7 @@ AtomicParsley WebPage:
 
 \
 \
-\
-\\
+\  
 
 ## These links for me:
 srt - [https://trac.ffmpeg.org/ticket/7356]\
