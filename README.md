@@ -5,6 +5,9 @@ Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2 <img src=https://
 My collection of scripts :)\
 For converting (audio, video, ...) files using FFMPEG :)
 
+# ToDo and Future
+add https://github.com/nagadomi/waifu2x  
+
 ## How to use:
 All these .bat files drag and drop like.\
 Just drag and drop some files in these bat files :)
