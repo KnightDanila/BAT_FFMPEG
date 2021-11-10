@@ -30,7 +30,7 @@ if %COUNTER% GTR 0 (
 	for %%x in (%*) do (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM
-		ffmpeg.exe -i %%x -vcodec copy -an -map_metadata 0 -map 0 "%%~nx_output_AUDIO_ReM.%%~xx"
+		ffmpeg.exe -i %%x -vcodec copy -an -map_metadata 0 -map 0 "%%~nx_output_AUDIO_ReM%%~xx"
 	)
 ) else (
 	echo _____GET NO ONE FILES_____
