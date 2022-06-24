@@ -11,13 +11,13 @@ ECHO URL=%URL%;
 ECHO ****************************************************** & ECHO.
 
 REM _________________MAIN_____________________
-	youtube-dl.exe --write-thumbnail --skip-download %URL%
+	youtube-dl.exe --config-location youtube-dl-Thumbnail.conf %URL%
 REM _______________END_MAIN___________________
 
 ECHO.
 ECHO ******************************************************
 ECHO * If thumbnail does not save, download it from here: *
-youtube-dl.exe --get-thumbnail %URL%
+	youtube-dl.exe --get-thumbnail %URL%
 ECHO ******************************************************
 ECHO.
 
