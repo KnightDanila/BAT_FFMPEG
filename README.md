@@ -72,7 +72,7 @@ You can change -crf 0..51 - where 0 is lossless, 23 is the default, and 51 is wo
 MAIN:
 ```ffmpeg.exe -i %%x -vcodec libvpx -crf 30 -b:v 0 -acodec libvorbis "%%~nx_output_WEBM.webm"```
 ### Youtube-dl
-youtube-dl-* - the ready-made presets for youtube-dl  
+youtube-dl-* - the ready-made presets for youtube-dl (it uses yt-dlp, now)  
 youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video  
 youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192Kbps it is the maximum quality of audio file in youtube audio stream  
 ## FFMPEG About :movie_camera:
@@ -88,6 +88,9 @@ YouTube-DL WebPage:
 > YouTube-DL About:  
 > Official: http://rg3.github.io/youtube-dl/  
 > GitHub: https://github.com/rg3/youtube-dl 
+
+## yt-dlp About :movie_camera:
+> GitHub: https://github.com/yt-dlp/yt-dlp
 
 ## AtomicParsley About :movie_camera:
 AtomicParsley WebPage: 
