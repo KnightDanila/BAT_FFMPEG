@@ -9,8 +9,8 @@ For converting (audio, video, ...) files using FFMPEG :)
 add https://github.com/nagadomi/waifu2x  
 
 ## How to use:
-All these .bat files drag and drop like.\
-Just drag and drop some files in these bat files :)
+1. Edit the batch script to your liking. For example, where to trim the video.
+2. Just drag a video or audio file onto the batch file. :)
 
 ### Logic
 All files have MAIN Code - where you can find main command(s) for ffmpeg.exe\
