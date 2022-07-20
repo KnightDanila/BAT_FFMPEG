@@ -7,6 +7,9 @@ For converting (audio, video, ...) files using FFMPEG :)
 
 ## ToDo and Future
 add https://github.com/nagadomi/waifu2x  
+add boomerang GIFs https://superuser.com/questions/1608327/ffmpeg-boomerang-effect-to-gif  
+add image2pipe and video pipe2image https://stackoverflow.com/questions/46397240/ffmpeg-image2pipe-producing-broken-video  
+
 
 ## How to use:
 1. Edit the batch script to your liking. For example, where to trim the video.
