@@ -80,24 +80,25 @@ youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video
 youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192Kbps it is the maximum quality of audio file in youtube audio stream  
 
 ## FFMPEG About :movie_camera:
-FFMPEG WebPage: 
+FFMPEG WebPages: 
 > https://www.ffmpeg.org/  
 > FFMPEG About:  
 > Official: https://www.ffmpeg.org/about.html  
 > Wiki: https://en.wikipedia.org/wiki/FFmpeg
 
 ## YouTube-DL About :movie_camera:
-YouTube-DL WebPage: 
+YouTube-DL WebPages: 
 > http://rg3.github.io/youtube-dl/  
 > YouTube-DL About:  
 > Official: http://rg3.github.io/youtube-dl/  
 > GitHub: https://github.com/rg3/youtube-dl 
 
 ## yt-dlp About :movie_camera:
+yt-dlp About WebPages:
 > GitHub: https://github.com/yt-dlp/yt-dlp
 
 ## AtomicParsley About :movie_camera:
-AtomicParsley WebPage: 
+AtomicParsley WebPages: 
 > http://atomicparsley.sourceforge.net/  
 > AtomicParsley About:  
 > Official: https://sourceforge.net/projects/atomicparsley/  
@@ -106,7 +107,7 @@ AtomicParsley WebPage:
 ## ImageMagick About :mage_man:
 ImageMagick WebPages:  
 > https://imagemagick.org  
-> ImageMagick-DL About:  
+> ImageMagick About:  
 > GitHub: https://github.com/ImageMagick/ImageMagick  
 
 ## These links for me (and maybe for you too =) ):
