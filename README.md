@@ -7,6 +7,9 @@ For converting (audio, video, ...) files using FFMPEG :)
 
 ## ToDo and Future
 add https://github.com/nagadomi/waifu2x  
+add boomerang GIFs https://superuser.com/questions/1608327/ffmpeg-boomerang-effect-to-gif  
+add image2pipe and video pipe2image https://stackoverflow.com/questions/46397240/ffmpeg-image2pipe-producing-broken-video  
+add slow-down or speed-up gifs: http://blog.floriancargoet.com/slow-down-or-speed-up-a-gif-with-imagemagick/
 
 ## How to use:
 1. Edit the batch script to your liking. For example, where to trim the video.
@@ -75,34 +78,38 @@ MAIN:
 youtube-dl-* - the ready-made presets for youtube-dl (it uses yt-dlp, now)  
 youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video  
 youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192Kbps it is the maximum quality of audio file in youtube audio stream  
+
 ## FFMPEG About :movie_camera:
-FFMPEG WebPage: 
+FFMPEG WebPages: 
 > https://www.ffmpeg.org/  
 > FFMPEG About:  
 > Official: https://www.ffmpeg.org/about.html  
 > Wiki: https://en.wikipedia.org/wiki/FFmpeg
 
 ## YouTube-DL About :movie_camera:
-YouTube-DL WebPage: 
+YouTube-DL WebPages: 
 > http://rg3.github.io/youtube-dl/  
 > YouTube-DL About:  
 > Official: http://rg3.github.io/youtube-dl/  
 > GitHub: https://github.com/rg3/youtube-dl 
 
 ## yt-dlp About :movie_camera:
+yt-dlp About WebPages:
 > GitHub: https://github.com/yt-dlp/yt-dlp
 
 ## AtomicParsley About :movie_camera:
-AtomicParsley WebPage: 
+AtomicParsley WebPages: 
 > http://atomicparsley.sourceforge.net/  
 > AtomicParsley About:  
 > Official: https://sourceforge.net/projects/atomicparsley/  
 > GitHub: https://github.com/wez/atomicparsley  
 
-\
-\
-\  
+## ImageMagick About :mage_man:
+ImageMagick WebPages:  
+> https://imagemagick.org  
+> ImageMagick About:  
+> GitHub: https://github.com/ImageMagick/ImageMagick  
 
-## These links for me:
+## These links for me (and maybe for you too =) ):
 srt - [https://trac.ffmpeg.org/ticket/7356]\
 srt EOF -  sub.ass - CRLF and sub.srt - LF - [https://trac.ffmpeg.org/ticket/7362]
