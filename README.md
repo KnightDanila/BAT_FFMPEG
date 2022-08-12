@@ -103,7 +103,7 @@ AtomicParsley WebPage:
 > Official: https://sourceforge.net/projects/atomicparsley/  
 > GitHub: https://github.com/wez/atomicparsley  
 
-## ImageMagick About :magic:
+## ImageMagick About :mage_man:
 ImageMagick WebPages:  
 > https://imagemagick.org  
 > ImageMagick-DL About:  
