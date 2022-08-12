@@ -78,6 +78,7 @@ MAIN:
 youtube-dl-* - the ready-made presets for youtube-dl (it uses yt-dlp, now)  
 youtube-dl-ThumbNail.bat - it downloads only thumbnail from youtube video  
 youtube-dl-MP3-192Kbps.bat - it downloads mp3 file - 192Kbps it is the maximum quality of audio file in youtube audio stream  
+
 ## FFMPEG About :movie_camera:
 FFMPEG WebPage: 
 > https://www.ffmpeg.org/  
@@ -102,10 +103,12 @@ AtomicParsley WebPage:
 > Official: https://sourceforge.net/projects/atomicparsley/  
 > GitHub: https://github.com/wez/atomicparsley  
 
-\
-\
-\  
+## ImageMagick About :magic:
+ImageMagick WebPages:  
+> https://imagemagick.org  
+> ImageMagick-DL About:  
+> GitHub: https://github.com/ImageMagick/ImageMagick  
 
-## These links for me:
+## These links for me (and maybe for you too =) ):
 srt - [https://trac.ffmpeg.org/ticket/7356]\
 srt EOF -  sub.ass - CRLF and sub.srt - LF - [https://trac.ffmpeg.org/ticket/7362]
