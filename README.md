@@ -50,12 +50,16 @@ ffmpeg -i %%x -r 30 -vcodec libx264 -acodec copy -map_metadata 0 -map 0 -threads
 REM ffmpeg -r "60" -i %%x -vcodec copy -acodec copy -map_metadata 0 -map 0 -threads 1 "%%~nx_output_FPS60.mp4"
 ```
 ### Video-ToGIF (ffmpeg video to GIF)
+
 Convert video to GIF files.\
 By different styles:\
 `Video-ToGIF_16Bit-Style.bat` - 16 Bit-Style\
 `Video-ToGIF_32ColorsStyle.bat` - 32 Colors Style\
 `Video-ToGIF_Fast.bat` - fast&quality\
 `Video-ToGIF_HD.bat` - max quality\
+#### Links:
+http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html  
+
 ### Video-Cut (ffmpeg cut video)
 -ss - start\
 ffmpeg -ss 00:01:00.000  ... - cut video from 1 minute to the end of video\
