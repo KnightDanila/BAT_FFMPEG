@@ -14,6 +14,10 @@ ECHO. & ECHO ******* BAT FILE *******
 ECHO %~nx0 
 ECHO ************************ & ECHO.
 
+REM Creating the Results Directory - GIFs
+set RESULTS_DIR="GIFs"
+call SYS_MakeResultsDir.bat %RESULTS_DIR%
+
 REM For first file
 REM %1
 REM For multiple files
@@ -38,7 +42,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
 		REM HD style :)
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
-		ImageMagick_convert.exe %%x "GIFs/%%~nx_WebpToGif.gif"
+		ImageMagick_convert.exe %%x "%RESULTS_DIR%\%%~nx_WebpToGif.gif"
 
 
 )

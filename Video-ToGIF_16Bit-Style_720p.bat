@@ -40,16 +40,17 @@ if %COUNTER% GTR 0 (
 REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
 		
+		REM 16 bit style :) P.S. In real it is 2 bit style :D
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
-		ffmpeg.exe -i %%x -vf fps=30,scale=-1:240:flags=lanczos,palettegen=max_colors=64 Video-ToGIF_palette.png -y
-		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=10,scale=240:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "%RESULTS_DIR%\%%~nx_Output_64ColorsStyle_240p.gif"
+		ffmpeg.exe -i %%x -vf fps=30,scale=-1:240:flags=lanczos,palettegen=max_colors=16 Video-ToGIF_palette.png -y
+		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=13,scale=-1:720:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "%RESULTS_DIR%\%%~nx_output_128Bit_240p.gif"
 
 		REM TESTs
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=320:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=400:-1:flags=lanczos[x];[x][1:v] paletteuse" "%%~nx_output.gif"
 		REM (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
-		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse" "%%~nx_output_16Bit.gif"
+		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=15,scale=-1:-1:flags=lanczos[x];[x][1:v]paletteuse" "%%~nx_output.gif"
 
 
 

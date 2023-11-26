@@ -14,6 +14,10 @@ ECHO. & ECHO ******* BAT FILE *******
 ECHO %~nx0 
 ECHO ************************ & ECHO.
 
+REM Creating the Results Directory - GIFs
+set RESULTS_DIR="GIFs"
+call SYS_MakeResultsDir.bat %RESULTS_DIR%
+
 REM For first file
 REM %1
 REM For multiple files
@@ -40,7 +44,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
 		REM scale=-1:-1 and scale=320:-1 = dispersion
 		ffmpeg.exe -i %%x -vf fps=24,scale=-1:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
-		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=24,scale=-1:240:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "GIFs\%%~nx_output_HD_240p.gif"
+		ffmpeg.exe -i %%x -i Video-ToGIF_palette.png -filter_complex "fps=24,scale=-1:240:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" "%RESULTS_DIR%\%%~nx_output_HD_240p.gif"
 
 		REM TESTs
 		REM ffmpeg.exe -ss 00:19:07 -t 1.3 -i %%x -vf fps=15,scale=320:-1:flags=lanczos,palettegen Video-ToGIF_palette.png -y
