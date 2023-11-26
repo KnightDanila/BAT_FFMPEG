@@ -10,7 +10,7 @@ add https://github.com/nagadomi/waifu2x
 add boomerang GIFs https://superuser.com/questions/1608327/ffmpeg-boomerang-effect-to-gif  
 add image2pipe and video pipe2image https://stackoverflow.com/questions/46397240/ffmpeg-image2pipe-producing-broken-video  
 add slow-down or speed-up gifs: http://blog.floriancargoet.com/slow-down-or-speed-up-a-gif-with-imagemagick/
-
+add feature to download video by timestamp https://youtu.be/lFKw9zlA2fw?t=16
 ## How to use:
 1. Edit the batch script to your liking. For example, where to trim the video.
 2. Just drag a video or audio file onto the batch file. :)
