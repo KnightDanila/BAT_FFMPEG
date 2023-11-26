@@ -38,7 +38,7 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
 		REM HD style :)
 		REM For Full File (create palette.png - "Video-ToGIF_palette.png", then create gif - I am happy)
-		ImageMagick_convert.exe %%x "%%~nx_WebpToGif.gif"
+		ImageMagick_convert.exe %%x "GIFs/%%~nx_WebpToGif.gif"
 
 
 )
