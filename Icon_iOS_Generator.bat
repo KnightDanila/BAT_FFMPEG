@@ -42,19 +42,19 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 
 		REM Basic sizes :)
 		REM Use 1024 png as source for other sizes:
-		ImageMagick_convert.exe %%x -resize 20x20 "%RESULTS_DIR%\%%~nx_20x20.png"
-		ImageMagick_convert.exe %%x -resize 29x29 "%RESULTS_DIR%\%%~nx_29x29.png"
-		ImageMagick_convert.exe %%x -resize 40x40 "%RESULTS_DIR%\%%~nx_40x40.png"
-		ImageMagick_convert.exe %%x -resize 58x58 "%RESULTS_DIR%\%%~nx_58x58.png"
-		ImageMagick_convert.exe %%x -resize 60x60 "%RESULTS_DIR%\%%~nx_60x60.png"
-		ImageMagick_convert.exe %%x -resize 76x76 "%RESULTS_DIR%\%%~nx_76x76.png"
-		ImageMagick_convert.exe %%x -resize 80x80 "%RESULTS_DIR%\%%~nx_80x80.png"
-		ImageMagick_convert.exe %%x -resize 87x87 "%RESULTS_DIR%\%%~nx_87x87.png"
-      ImageMagick_convert.exe %%x -resize 120x120 "%RESULTS_DIR%\%%~nx_120x120.png"
-		ImageMagick_convert.exe %%x -resize 152x152 "%RESULTS_DIR%\%%~nx_152x152.png"
-		ImageMagick_convert.exe %%x -resize 167x167 "%RESULTS_DIR%\%%~nx_167x167.png"
-		ImageMagick_convert.exe %%x -resize 180x180 "%RESULTS_DIR%\%%~nx_180x180.png"
-      REM ImageMagick_convert.exe %%x -resize 1024x1024 "%RESULTS_DIR%\%%~nx_1024x1024.png"
+		ImageMagick_convert.exe %%x -scale 20x20 "%RESULTS_DIR%\%%~nx_20x20.png"
+		ImageMagick_convert.exe %%x -scale 29x29 "%RESULTS_DIR%\%%~nx_29x29.png"
+		ImageMagick_convert.exe %%x -scale 40x40 "%RESULTS_DIR%\%%~nx_40x40.png"
+		ImageMagick_convert.exe %%x -scale 58x58 "%RESULTS_DIR%\%%~nx_58x58.png"
+		ImageMagick_convert.exe %%x -scale 60x60 "%RESULTS_DIR%\%%~nx_60x60.png"
+		ImageMagick_convert.exe %%x -scale 76x76 "%RESULTS_DIR%\%%~nx_76x76.png"
+		ImageMagick_convert.exe %%x -scale 80x80 "%RESULTS_DIR%\%%~nx_80x80.png"
+		ImageMagick_convert.exe %%x -scale 87x87 "%RESULTS_DIR%\%%~nx_87x87.png"
+      ImageMagick_convert.exe %%x -scale 120x120 "%RESULTS_DIR%\%%~nx_120x120.png"
+		ImageMagick_convert.exe %%x -scale 152x152 "%RESULTS_DIR%\%%~nx_152x152.png"
+		ImageMagick_convert.exe %%x -scale 167x167 "%RESULTS_DIR%\%%~nx_167x167.png"
+		ImageMagick_convert.exe %%x -scale 180x180 "%RESULTS_DIR%\%%~nx_180x180.png"
+      ImageMagick_convert.exe %%x -scale 1024x1024 "%RESULTS_DIR%\%%~nx_1024x1024.png"
 
 )
 ) else (
