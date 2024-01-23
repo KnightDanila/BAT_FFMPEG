@@ -14,7 +14,7 @@ ECHO. & ECHO ******* BAT FILE *******
 ECHO %~nx0 
 ECHO ************************ & ECHO.
 
-REM Creating the Results Directory - GIFs
+REM Creating the Results Directory - ICONs
 set RESULTS_DIR="ICONs"
 call SYS_MakeResultsDir.bat %RESULTS_DIR%
 
@@ -50,11 +50,11 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		ImageMagick_convert.exe %%x -scale 76x76 "%RESULTS_DIR%\%%~nx_76x76.png"
 		ImageMagick_convert.exe %%x -scale 80x80 "%RESULTS_DIR%\%%~nx_80x80.png"
 		ImageMagick_convert.exe %%x -scale 87x87 "%RESULTS_DIR%\%%~nx_87x87.png"
-      ImageMagick_convert.exe %%x -scale 120x120 "%RESULTS_DIR%\%%~nx_120x120.png"
+		ImageMagick_convert.exe %%x -scale 120x120 "%RESULTS_DIR%\%%~nx_120x120.png"
 		ImageMagick_convert.exe %%x -scale 152x152 "%RESULTS_DIR%\%%~nx_152x152.png"
 		ImageMagick_convert.exe %%x -scale 167x167 "%RESULTS_DIR%\%%~nx_167x167.png"
 		ImageMagick_convert.exe %%x -scale 180x180 "%RESULTS_DIR%\%%~nx_180x180.png"
-      ImageMagick_convert.exe %%x -scale 1024x1024 "%RESULTS_DIR%\%%~nx_1024x1024.png"
+		ImageMagick_convert.exe %%x -scale 1024x1024 "%RESULTS_DIR%\%%~nx_1024x1024.png"
 
 )
 ) else (
