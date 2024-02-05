@@ -52,12 +52,12 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		ImageMagick_convert.exe %%x -scale 87x87 "%RESULTS_DIR%\%%~nx_87x87.png"
 		ImageMagick_convert.exe %%x -scale 114x114 "%RESULTS_DIR%\%%~nx_114x114.png"
 		ImageMagick_convert.exe %%x -scale 120x120 "%RESULTS_DIR%\%%~nx_120x120.png"
-		ImageMagick_convert.exe %%x -scale 120x120 "%RESULTS_DIR%\%%~nx_128x128.png"
-		ImageMagick_convert.exe %%x -scale 120x120 "%RESULTS_DIR%\%%~nx_136x136.png"
+		ImageMagick_convert.exe %%x -scale 128x128 "%RESULTS_DIR%\%%~nx_128x128.png"
+		ImageMagick_convert.exe %%x -scale 136x136 "%RESULTS_DIR%\%%~nx_136x136.png"
 		ImageMagick_convert.exe %%x -scale 152x152 "%RESULTS_DIR%\%%~nx_152x152.png"
 		ImageMagick_convert.exe %%x -scale 167x167 "%RESULTS_DIR%\%%~nx_167x167.png"
 		ImageMagick_convert.exe %%x -scale 180x180 "%RESULTS_DIR%\%%~nx_180x180.png"
-		ImageMagick_convert.exe %%x -scale 180x180 "%RESULTS_DIR%\%%~nx_192x192.png"
+		ImageMagick_convert.exe %%x -scale 192x192 "%RESULTS_DIR%\%%~nx_192x192.png"
 		ImageMagick_convert.exe %%x -scale 1024x1024 "%RESULTS_DIR%\%%~nx_1024x1024.png"
 
 )
