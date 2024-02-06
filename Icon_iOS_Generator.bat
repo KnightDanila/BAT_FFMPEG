@@ -58,6 +58,8 @@ REM //////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\
 		ImageMagick_convert.exe %%x -scale 167x167 "%RESULTS_DIR%\%%~nx_167x167.png"
 		ImageMagick_convert.exe %%x -scale 180x180 "%RESULTS_DIR%\%%~nx_180x180.png"
 		ImageMagick_convert.exe %%x -scale 192x192 "%RESULTS_DIR%\%%~nx_192x192.png"
+		ImageMagick_convert.exe %%x -scale 256x256 "%RESULTS_DIR%\%%~nx_256x256.png"
+		ImageMagick_convert.exe %%x -scale 512x512 "%RESULTS_DIR%\%%~nx_512x512.png"
 		ImageMagick_convert.exe %%x -scale 1024x1024 "%RESULTS_DIR%\%%~nx_1024x1024.png"
 
 )
