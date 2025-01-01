@@ -21,7 +21,7 @@ ECHO URL=%URL%;
 ECHO ****************************************************** & ECHO.
 
 REM _________________MAIN_____________________
-	youtube-dl.exe --config-location youtube-dl-MP3-192Kbps.conf %URL%
+	youtube-dl.exe --config-location youtube-dl-MP3-192Kbps_Thumbnail.conf %URL%
 REM _______________END_MAIN___________________
 
 ECHO.
