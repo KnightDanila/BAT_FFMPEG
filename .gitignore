@@ -5,3 +5,8 @@
 !.gitignore
 !*.conf
 !index.html
+
+# Allow the app folder itself
+!Apps/
+# Allow all files and subfolders inside app
+!Apps/**
